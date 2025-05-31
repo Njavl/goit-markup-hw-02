@@ -16,7 +16,8 @@
 }
 body {
   font-family: Roboto, sans-serif;
-  color: #000;
+  background-color: var(--white);
+  color: var(--slate);
 }
 
 a {
@@ -41,7 +42,7 @@ ul {
   font-family: var(--second-family), sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
@@ -68,8 +69,12 @@ ul {
 .header-nav-link:hover {
   color: var(--ocean);
 }
+.header-nav-link:focus {
+  color: var(--ocean);
+}
 
 .header-address {
+  font-style: normal;
 }
 
 .header-address-list {
@@ -102,7 +107,7 @@ ul {
 .hero-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
@@ -114,9 +119,13 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
+  cursor: pointer;
 }
 .hero-btn:hover {
-  cursor: pointer;
+  background-color: var(--ocean);
+}
+
+.hero-btn:focus {
   background-color: var(--ocean);
 }
 
@@ -152,14 +161,16 @@ ul {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
+  text-transform: capitalize;
 }
 .team-list {
 }
 .team-item {
+  background-color: var(--white);
 }
 .team-item-img {
 }
@@ -186,10 +197,11 @@ ul {
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
+  text-transform: capitalize;
 }
 .portfolio-list {
 }
@@ -222,7 +234,7 @@ ul {
   font-family: var(--second-family), sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
